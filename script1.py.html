@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>script1.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #bcbec4;}
+.s4 { color: #2aacb8;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+script1.py</font>
+</center></td></tr></table>
+<pre><span class="s0">#functions assignment</span>
+<span class="s0">#Circle function</span>
+
+<span class="s2">def </span><span class="s1">calculate_circle_area</span><span class="s3">(</span><span class="s1">radius</span><span class="s3">):</span>
+    <span class="s1">pi </span><span class="s3">= </span><span class="s4">3.14159</span>
+    <span class="s1">area </span><span class="s3">= </span><span class="s1">pi </span><span class="s3">* (</span><span class="s1">radius </span><span class="s3">** </span><span class="s4">2</span><span class="s3">)</span>
+    <span class="s2">return </span><span class="s5">f&quot;</span><span class="s2">{</span><span class="s1">area</span><span class="s2">:</span><span class="s5">.2f</span><span class="s2">}</span><span class="s5">&quot;</span>
+
+<span class="s1">radius_input </span><span class="s3">= </span><span class="s1">float</span><span class="s3">(</span><span class="s1">input</span><span class="s3">(</span><span class="s5">&quot;Enter radius of circle: &quot;</span><span class="s3">))</span>
+<span class="s1">area_result </span><span class="s3">= </span><span class="s1">calculate_circle_area</span><span class="s3">(</span><span class="s1">radius_input</span><span class="s3">)</span>
+<span class="s1">print</span><span class="s3">(</span><span class="s5">f&quot;Area of circle: </span><span class="s2">{</span><span class="s1">area_result</span><span class="s2">}</span><span class="s5">&quot;</span><span class="s3">)</span>
+
+<span class="s0">#Taxes function</span>
+<span class="s2">def </span><span class="s1">calculate_total_due</span><span class="s3">(</span><span class="s1">money</span><span class="s3">, </span><span class="s1">tax</span><span class="s3">):</span>
+    <span class="s1">total_due </span><span class="s3">= </span><span class="s1">money </span><span class="s3">+ (</span><span class="s1">money </span><span class="s3">* </span><span class="s1">tax</span><span class="s3">)</span>
+    <span class="s2">return </span><span class="s1">total_due</span>
+
+<span class="s1">money_input </span><span class="s3">= </span><span class="s1">float</span><span class="s3">(</span><span class="s1">input</span><span class="s3">(</span><span class="s5">&quot;Enter money amount: &quot;</span><span class="s3">))</span>
+<span class="s1">tax_input </span><span class="s3">= </span><span class="s1">float</span><span class="s3">(</span><span class="s1">input</span><span class="s3">(</span><span class="s5">&quot;Enter tax rate (as a decimal, e.g., 0.07): &quot;</span><span class="s3">))</span>
+<span class="s1">total_result </span><span class="s3">= </span><span class="s1">calculate_total_due</span><span class="s3">(</span><span class="s1">money_input</span><span class="s3">, </span><span class="s1">tax_input</span><span class="s3">)</span>
+<span class="s1">print</span><span class="s3">(</span><span class="s5">f&quot;Total due: $</span><span class="s2">{</span><span class="s1">total_result</span><span class="s2">:</span><span class="s5">.2f</span><span class="s2">}</span><span class="s5">&quot;</span><span class="s3">)</span>
+
+<span class="s0">#temperature function</span>
+<span class="s2">def </span><span class="s1">fahrenheit_to_celsius</span><span class="s3">(</span><span class="s1">fahrenheit</span><span class="s3">):</span>
+    <span class="s1">celsius </span><span class="s3">= (</span><span class="s1">fahrenheit </span><span class="s3">- </span><span class="s4">32</span><span class="s3">) * (</span><span class="s4">5 </span><span class="s3">/ </span><span class="s4">9</span><span class="s3">)</span>
+    <span class="s2">return </span><span class="s1">celsius</span>
+
+<span class="s1">fahrenheit_input </span><span class="s3">= </span><span class="s1">float</span><span class="s3">(</span><span class="s1">input</span><span class="s3">(</span><span class="s5">&quot;Enter temperature in Fahrenheit: &quot;</span><span class="s3">))</span>
+<span class="s1">celsius_result </span><span class="s3">= </span><span class="s1">fahrenheit_to_celsius</span><span class="s3">(</span><span class="s1">fahrenheit_input</span><span class="s3">)</span>
+<span class="s1">print</span><span class="s3">(</span><span class="s5">f&quot;Temperature in Celsius: </span><span class="s2">{</span><span class="s1">celsius_result</span><span class="s2">:</span><span class="s5">.2f</span><span class="s2">}</span><span class="s5">&quot;</span><span class="s3">)</span></pre>
+</body>
+</html>
